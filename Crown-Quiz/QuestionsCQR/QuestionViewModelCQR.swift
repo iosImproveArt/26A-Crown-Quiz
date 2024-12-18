@@ -48,7 +48,7 @@ class QuestionViewModelCQR: ObservableObject {
         
         if typeOfGame == .withC { player2 = "Computer" }
         if typeOfGame == .withF { showEnterView = true }
-        listOfQuestions =  Array(QuestionCQR.advancedQuestions.shuffled().prefix(20))
+        listOfQuestions =  Array(QuestionCQR.advancedQuestions.shuffled().prefix(21))
     }
     
     func answerTheQuestion(answer: String) {
@@ -65,13 +65,13 @@ class QuestionViewModelCQR: ObservableObject {
         }
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 2) { [self] in
-            if questionNumber >= 20 {
+            if questionNumber >= 20 || (typeOfGame == .withC && questionNumber >= 19) {
                 showFinishView = true
             } else {
                 self.answer = ""
                 if typeOfGame == .withC {
                     questionNumber += 2
-                    player2RightAnswers += [0, 1, 1].randomElement()!
+                    player2RightAnswers += [0, 1].randomElement()!
                 }
             }
         }
