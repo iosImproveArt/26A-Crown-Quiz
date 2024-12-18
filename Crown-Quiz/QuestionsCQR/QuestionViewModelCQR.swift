@@ -69,7 +69,10 @@ class QuestionViewModelCQR: ObservableObject {
                 showFinishView = true
             } else {
                 self.answer = ""
-                questionNumber += 1
+                if typeOfGame == .withC {
+                    questionNumber += 2
+                    player2RightAnswers += [0, 1, 1].randomElement()!
+                }
             }
         }
     }
