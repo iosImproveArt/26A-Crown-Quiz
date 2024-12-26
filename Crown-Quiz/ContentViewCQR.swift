@@ -7,13 +7,13 @@ struct ContentViewCQR: View {
     @State var showLoading = true
     @State var selectedTab: Tabs = .quiz
     
-    var cwrrc = "45245"
-    var wrfvwr = 425245
-    func vwrgvwrgv() -> String {
-        return "vwrgvwrg4246246"
+    var vwrfv = "wfvrwv"
+    var wrfvwr = 2452
+    func vwrfvw() -> String {
+        return "wrfvwrfvw"
     }
-    func wvrgvwvwrgvwrrg() {
-        print("rgvvwrgvwrgv")
+    func wrfvwrfvwrfvw() {
+        print("wvrfvwrf")
     }
     
     

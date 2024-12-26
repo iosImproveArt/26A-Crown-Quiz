@@ -13,13 +13,13 @@ struct LoadingViewSQ: View {
     @Binding var showView: Bool
     @State var rotation: CGFloat = 0
     
-    var cwrrc = "45245"
-    var wrfvwr = 425245
-    func vwrgvwrgv() -> String {
-        return "vwrgvwrg4246246"
+   var vwrfv = "wfvrwv"
+    var wrfvwr = 2452
+    func vwrfvw() -> String {
+        return "wrfvwrfvw"
     }
-    func wvrgvwvwrgvwrrg() {
-        print("rgvvwrgvwrgv")
+    func wrfvwrfvwrfvw() {
+        print("wvrfvwrf")
     }
     
     
